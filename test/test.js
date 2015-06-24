@@ -7,8 +7,8 @@ describe('GET /', function() {
     request(app).get('/').expect('hola radiola', done);
   });
 
-  it('forzar un fallo', function(done) {
-    done(new Error('JJJ Error forzado'));
-  })
+  // it('forzar un fallo', function(done) {
+  //   done(new Error('JJJ Error forzado'));
+  // })
 
 });
