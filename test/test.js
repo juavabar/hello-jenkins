@@ -6,7 +6,7 @@ describe('GET /', function() {
   it('respond with hola-radiola', function(done) {
     request(app).get('/').expect(
       'hola-radiola', 
-      setTimeout(done(), 2000)
+      setTimeout(done(), 5000)
     );
   });
 
