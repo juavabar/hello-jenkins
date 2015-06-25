@@ -4,7 +4,10 @@ var app = require('../app.js');
 describe('GET /', function() {
 
   it('respond with hola-radiola', function(done) {
-    request(app).get('/').expect('hola-radiola', done);
+    request(app).get('/').expect(
+      'hola-radiola', 
+      setTimeout(done(), 2000)
+    );
   });
 
 
