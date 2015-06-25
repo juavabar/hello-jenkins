@@ -8,11 +8,12 @@ describe('GET /', function() {
   });
 
   it('forzar una pausa', function(done) {
-    setTimeout(done(), 4000);
+    this.timeout(5000);
+    setTimeout(done, 4000);
   });
 
   // it('forzar un fallo', function(done) {
   //   done(new Error('JJJ Error forzado'));
-  // })
+  // });
 
 });

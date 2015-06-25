@@ -1,3 +1,9 @@
 #!/bin/sh
- 
-./node_modules/.bin/mocha ./test/test.js
+
+#./node_modules/.bin/mocha ./test/test.js
+
+#if [ ! -d ./reports ]; then mkdir reports; fi
+#./node_modules/.bin/mocha --reporter xunit ./test/test.js > reports/TESTS-xunit.xml
+
+./node_modules/.bin/mocha --reporter spec ./test/test.js
+
